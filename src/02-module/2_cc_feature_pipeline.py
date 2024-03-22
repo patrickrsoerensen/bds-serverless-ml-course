@@ -12,7 +12,7 @@
 
 # %%
 #!pip install -U hopsworks --quiet
-#!pip install -U faker --quiet
+!pip install -U faker --quiet
 
 # %%
 import pandas as pd
@@ -107,5 +107,8 @@ window_aggs_fg.insert(window_aggs_df, write_options={"wait_for_job" : False})
 
 labels_fg = fs.get_feature_group(name="transactions_fraud_label", version=2)
 labels_fg.insert(fraud_labels)
+
+# %%
+
 
 
